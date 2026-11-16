@@ -1,6 +1,9 @@
 name: "appflowy_editor"
 
-version: 6.1.0
+version: 6.1.0-zotpaper.1
+
+publish_to: https://pub.zotpaper.cn
+repository: https://github.com/moyearzhou/appflowy-editor
 
 homepage: "https://github.com/AppFlowy-IO/appflowy-editor"
 
@@ -21,6 +24,9 @@ dependencies:
   flutter_svg: "^2.0.6"
   html: ^0.15.5
   http: "^1.2.0"
+  # image 4.11.0 calls archive APIs absent in archive 4.0.9.
+  # Keep the version used by ZotPaper until upstream compatibility is fixed.
+  image: ">=4.10.2 <4.11.0"
   intl: "^0.20.2"
   keyboard_height_plugin: "^0.1.5"
   logging: "^1.2.0"
@@ -36,10 +42,6 @@ dependencies:
   url_launcher: "^6.1.11"
 
 dev_dependencies:
-  awesome_lints:
-    git:
-      url: https://github.com/LucasXu0/awesome_lints.git
-      ref: main
   custom_lint: ^0.8.1
   flutter_lints: ^6.0.0
   flutter_localizations:

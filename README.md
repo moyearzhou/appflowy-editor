@@ -1,3 +1,18 @@
+## ZotPaper 私有 pub 快照
+
+本包来自上游 AppFlowy-IO/appflowy-editor 精确提交
+`01eccc6ee36bd07698bd80915289fe7070478cd2`，不是 pub.dev 的同名 6.1.0 发布内容。
+运行时代码、资源和上游双许可证保持原样；调整发布元数据、排除文件，移除未使用的 awesome_lints Git 开发依赖，并约束 image 为现有客户端兼容的 4.10.x（详见 UPSTREAM.md）。
+
+```yaml
+dependencies:
+  appflowy_editor:
+    hosted: https://pub.zotpaper.cn
+    version: 6.1.0-zotpaper.1
+```
+
+使用精确版本固定该快照，配置私有 pub token 后执行 `flutter pub get`。
+
 <!--
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
