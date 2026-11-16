@@ -1,3 +1,10 @@
+## 6.1.0-zotpaper.1
+
+- Package upstream commit 01eccc6ee36bd07698bd80915289fe7070478cd2 for the ZotPaper private pub registry.
+- Preserve upstream runtime source, assets and dual license without modification.
+- Constrain image to the current ZotPaper-compatible 4.10.x range; image 4.11.0 fails against archive 4.0.9.
+- Add packaging metadata and exclusions; remove the unused awesome_lints Git development dependency.
+
 ## 6.1.0
 * fix: unable to input text on windows desktop by @imaachman in https://github.com/AppFlowy-IO/appflowy-editor/pull/1126
 * feat: open html decoder for custom parser by @richardshiue in https://github.com/AppFlowy-IO/appflowy-editor/pull/1145
